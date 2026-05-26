@@ -1,0 +1,37 @@
+AI Agent
+
+final-project/
+├── backend/
+│   ├── server.js              ← 🔑 YOUR SQL CREDENTIALS GO HERE (line 20-25)
+│   ├── setup-database.js      ← 🔑 SAME CREDENTIALS HERE (line 10-15)
+│   └── package.json
+└── frontend/
+    ├── src/
+    │   ├── api.js             ← ⚡ LAST LINE: change MOCK_API → LIVE_API
+    │   ├── StudentAgent.jsx   ← DON'T TOUCH
+    │   ├── App.js             ← DON'T TOUCH
+    │   └── index.js           ← DON'T TOUCH
+    ├── public/index.html
+    └── package.json
+
+File                             Line       What to change
+backend/server.js                 25        "YOUR_PASSWORD_HERE" → your real SQL passwordbackend/setup-database.js 15         Same password
+frontend/src/api.js               Last line  MOCK_API → LIVE_API
+
+
+
+Run :
+
+# Terminal 1
+cd backend
+npm install
+node setup-database.js    # creates tables
+npm run dev               # starts server on :5000
+
+# Terminal 2
+cd frontend
+npm install
+npm start                 # opens browser on :3000
+
+
+file in drive
